@@ -1,0 +1,22 @@
+.ListProductContainer {
+    margin: 50px 0;
+
+    &>div>h4 {
+        border-bottom: 2px solid #cf0000;
+    }
+}
+
+.product-4p {
+    display: flex;
+    justify-content: space-between;
+
+    .imageHover {
+        width: 330px;
+        height: 470px;
+
+        img {
+            width: 100%;
+            height: calc(100% - 40px);
+        }
+    }
+}

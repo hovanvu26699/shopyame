@@ -1,0 +1,45 @@
+.informContainer {
+    padding: 30px;
+    padding-top: 0;
+    border-bottom: 1px solid #80808073;
+
+    &>form {
+        &>h5 {
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey;
+        }
+
+        .nameWrapper {
+            display: grid;
+            column-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        label {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .text-muted {
+            margin-top: 10px;
+            display: block;
+
+            &>i {
+                color: #000;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+
+        .btn {
+            font-size: 14px;
+            font-weight: 700;
+            border: none;
+            margin-top: 20px;
+            padding: 7px 15px;
+            background-color: #ee1b21;
+        }
+    }
+}

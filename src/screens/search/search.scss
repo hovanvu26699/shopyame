@@ -1,0 +1,15 @@
+.searchContainer {
+    padding: 40px 50px;
+    min-height: 30vh;
+
+    h2 {
+        text-align: center;
+        color: grey;
+    }
+
+    .products {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

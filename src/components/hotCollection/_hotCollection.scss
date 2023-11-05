@@ -1,0 +1,16 @@
+.HotCollectionContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin: 30px 0;
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .box-img {
+        img {
+            width: 100%;
+        }
+    }
+}

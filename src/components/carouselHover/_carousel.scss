@@ -1,0 +1,34 @@
+.imageHover {
+    display: inline-block;
+    max-width: 1400px;
+
+    &:hover {
+        box-shadow: 4px 4px 8px 3px #888888;
+    }
+
+    a {
+        min-width: 225px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .price {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 2px;
+        font-size: 14px;
+        font-weight: 500;
+
+        &__org {
+            margin-left: 10px;
+            text-decoration: line-through;
+        }
+
+        &__sale {
+            margin: 0 10px;
+            color: #dc0000;
+        }
+    }
+}

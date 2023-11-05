@@ -1,0 +1,34 @@
+.accountContainer {
+    max-width: 1000px;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: center;
+
+    .accountMenu {
+        border-right: 1px solid #80808073;
+        border-bottom: 1px solid #80808073;
+
+        .accountAvatar {
+            margin-bottom: 5px;
+        }
+
+        .menuList {
+            padding-left: 10px;
+
+            li {
+                font-size: 15px;
+                padding: 10px;
+                font-weight: 500;
+                color: #000;
+                list-style-type: none;
+                border-bottom: 1px solid #80808073;
+
+                &:last-child {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
