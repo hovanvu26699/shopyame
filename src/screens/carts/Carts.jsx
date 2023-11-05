@@ -76,6 +76,8 @@ const Carts = () => {
       setName("");
       setPhone("");
       setAD("");
+      data.map((item) => dlt(item.id));
+      e.preventDefault();
     }
   };
   useEffect(() => {

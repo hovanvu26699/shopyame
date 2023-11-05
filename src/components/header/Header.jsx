@@ -67,7 +67,7 @@ const Header = () => {
             <Link to="/products/sale">SALE</Link>
           </li>
           <li>
-            <a href="/">MỚI MỞ BÁN</a>
+            <Link to="/products/sale">MỚI MỞ BÁN</Link>
           </li>
           <li>
             <Dropdown>
@@ -75,11 +75,11 @@ const Header = () => {
                 ÁO POLO
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/products/polo">
-                  Áo PoLo Đơn Giản
+                <Dropdown.Item>
+                  <Link to="/products/polo">Áo PoLo Đơn Giản</Link>
                 </Dropdown.Item>
-                <Dropdown.Item href="/products/polo">
-                  Áo Polo Thiết kế
+                <Dropdown.Item>
+                  <Link to="/products/polo">Áo Polo Thiết kế</Link>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -92,153 +92,183 @@ const Header = () => {
               <Dropdown.Menu className="menu-list">
                 <div className="menu-left">
                   <div>
-                    <Dropdown.Item href="/products/quandai">
-                      QUẦN TÂY
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">QUẦN TÂY</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quandai">
-                      QUẦN DÀI BST THIẾT KẾ
+                    <Dropdown.Item>
+                      <Link to="/products/quandai"> QUẦN DÀI BST THIẾT KẾ</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quandai">
-                      QUẦN DÀI BST THIẾT KẾ
-                    </Dropdown.Item>
-                  </div>
-                  <div>
-                    <Dropdown.Item href="">QUẦN JEAN</Dropdown.Item>
-                    <Dropdown.Item href="">Dáng Ôm</Dropdown.Item>
-                    <Dropdown.Item href="">Dáng Vừa</Dropdown.Item>
-                    <Dropdown.Item href="">Dáng Rộng</Dropdown.Item>
-                  </div>
-                  <div>
-                    <Dropdown.Item href="/products/thun">ÁO THUN</Dropdown.Item>
-                    <Dropdown.Item href="/products/thun">
-                      Áo Thun Đơn Giản
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/products/thun">
-                      Áo Thun Thiết Kế
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/products/thun">
-                      Kiểu Tay Dài Sweater
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/products/thun">
-                      Phù Hợp Thể Thao
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">QUẦN DÀI BST THIẾT KẾ</Link>
                     </Dropdown.Item>
                   </div>
                   <div>
-                    <Dropdown.Item href="/products/quandai">
-                      QUẦN DÀI ĐƠN GIẢN
+                    <Dropdown.Item>
+                      <Link to="">QUẦN JEAN</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quandai">
-                      Kiểu Quần Jogger
+                    <Dropdown.Item>
+                      <Link to="">Dáng Ôm</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quandai">
-                      Lưng Gài
+                    <Dropdown.Item>
+                      <Link to="">Dáng Vừa</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quandai">
-                      Lưng Thun Ống Đứng
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/products/quandai">
-                      Lưng Thun Ống Jogger
+                    <Dropdown.Item>
+                      <Link to="">Dáng Rộng</Link>
                     </Dropdown.Item>
                   </div>
                   <div>
-                    <Dropdown.Item href="/products/khoac">
-                      ÁO KHOÁC
+                    <Dropdown.Item>
+                      <Link to="/products/thun">ÁO THUN</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/khoac">
-                      Kiểu Có Nón
+                    <Dropdown.Item>
+                      <Link to="/products/thun"> Áo Thun Đơn Giản</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/khoac">
-                      Kiểu Cổ Bẻ,Cổ Đứng
+                    <Dropdown.Item>
+                      <Link to="/products/thun">Áo Thun Thiết Kế</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/khoac">
-                      Kiểu Varsity
+                    <Dropdown.Item>
+                      <Link to="/products/thun"> Kiểu Tay Dài Sweater</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/khoac">
-                      Kiểu Cardigan
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/products/khoac">
-                      Áo Hoodie
+                    <Dropdown.Item>
+                      <Link to="/products/thun"> Phù Hợp Thể Thao</Link>
                     </Dropdown.Item>
                   </div>
                   <div>
-                    <Dropdown.Item href="/products/quanngan">
-                      QUẦN SHORT
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">QUẦN DÀI ĐƠN GIẢN</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quanngan">
-                      Dài Trên Gối
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">Kiểu Quần Jogger</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quanngan">
-                      Dài Tiêu Chuẩn
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">Lưng Gài</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quanngan">
-                      Kiểu Classic
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">Lưng Thun Ống Đứng</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/quanngan">
-                      Kiểu Thể Thao
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/products/quanngan">
-                      Kiểu Boxer
+                    <Dropdown.Item>
+                      <Link to="/products/quandai">Lưng Thun Ống Jogger</Link>
                     </Dropdown.Item>
                   </div>
                   <div>
-                    <Dropdown.Item href="">QUẦN LÓT</Dropdown.Item>
-                    <Dropdown.Item href="">Kiểu Tam Giác</Dropdown.Item>
-                    <Dropdown.Item href="">Kiểu Quần Đùi ngắn</Dropdown.Item>
-                    <Dropdown.Item href="">Kiểu Quần Đùi dài</Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/khoac">ÁO KHOÁC</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/khoac">Kiểu Có Nón</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/khoac">Kiểu Cổ Bẻ,Cổ Đứng</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/khoac">Kiểu Varsity</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/khoac">Kiểu Cardigan</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/khoac">Áo Hoodie</Link>
+                    </Dropdown.Item>
                   </div>
                   <div>
-                    <Dropdown.Item href="/products/phukien">
-                      PHỤ KIỆN
+                    <Dropdown.Item>
+                      <Link to="/products/quanngan">QUẦN SHORT</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/phukien">
-                      Dây Nịt Da
+                    <Dropdown.Item>
+                      <Link to="/products/quanngan">Dài Trên Gối</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/phukien">
-                      Ví Da
+                    <Dropdown.Item>
+                      <Link to="/products/quanngan">Dài Tiêu Chuẩn</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/phukien">Nón</Dropdown.Item>
-                    <Dropdown.Item href="/products/phukien">
-                      Tất - Vớ
+                    <Dropdown.Item>
+                      <Link to="/products/quanngan">Kiểu Classic</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/quanngan"> Kiểu Thể Thao</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/quanngan">Kiểu Boxer</Link>
                     </Dropdown.Item>
                   </div>
                   <div>
-                    <Dropdown.Item href="">BALO/TÚI</Dropdown.Item>
-                    <Dropdown.Item href="">Balo Daily</Dropdown.Item>
-                    <Dropdown.Item href="">Balo Modern</Dropdown.Item>
-                    <Dropdown.Item href="">Túi</Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">QUẦN LÓT</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">Kiểu Tam Giác</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">Kiểu Quần Đùi ngắn</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">Kiểu Quần Đùi dài</Link>
+                    </Dropdown.Item>
+                  </div>
+                  <div>
+                    <Dropdown.Item>
+                      <Link to="/products/phukien">PHỤ KIỆN</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/phukien">Dây Nịt Da</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/phukien">Ví Da</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/phukien">Nón</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/products/phukien"> Tất - Vớ</Link>
+                    </Dropdown.Item>
+                  </div>
+                  <div>
+                    <Dropdown.Item>
+                      <Link to="">BALO/TÚI</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">Balo Daily</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">Balo Modern</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="">Túi</Link>
+                    </Dropdown.Item>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <Dropdown.Item href="/products/somi">
-                      ÁO SƠ MI
+                    <Dropdown.Item>
+                      <Link to="/products/somi">ÁO SƠ MI</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Vải Sợi Tre
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Vải Sợi Tre</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Vải Sợi Cà Phê
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Vải Sợi Cà Phê</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Vải Cotton
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Vải Cotton</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Vải Sợi Rayon
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Vải Sợi Rayon</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Vải Sợi Modal
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Vải Sợi Modal</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Vải Sợi Đặc Biệt
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Vải Sợi Đặc Biệt</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Áo sơ mi tay dài
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Áo sơ mi tay dài</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Áo sơ mi tay ngắn
+                    <Dropdown.Item>
+                      <Link to="/products/somi">Áo sơ mi tay ngắn</Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/products/somi">
-                      Áo sơ mi cổ Cuban / Danton
+                    <Dropdown.Item>
+                      <Link to="/products/somi">
+                        Áo sơ mi cổ Cuban / Danton
+                      </Link>
                     </Dropdown.Item>
                   </div>
                 </div>
