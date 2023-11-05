@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/yame/static/css/main.5f60b7d9.css",
+    "main.js": "/yame/static/js/main.26a74f72.js",
+    "static/media/IMG_ExSL3.jpg": "/yame/static/media/IMG_ExSL3.30e38888378958a39f44.jpg",
+    "static/media/IMG_ExSL1.jpg": "/yame/static/media/IMG_ExSL1.21f8d32b597081fa841e.jpg",
+    "static/media/IMG_ExSL2.jpg": "/yame/static/media/IMG_ExSL2.62a5de760702d6819dc8.jpg",
+    "static/media/IMG_Mota.jpg": "/yame/static/media/IMG_Mota.dba56531243aa7270d34.jpg",
+    "static/media/IMG_BannerShoes.jpg": "/yame/static/media/IMG_BannerShoes.f0494598c2c49029ae4c.jpg",
+    "static/media/IMG_Empty.png": "/yame/static/media/IMG_Empty.0503805348c546ee4450.png",
+    "index.html": "/yame/index.html",
+    "main.5f60b7d9.css.map": "/yame/static/css/main.5f60b7d9.css.map",
+    "main.26a74f72.js.map": "/yame/static/js/main.26a74f72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f60b7d9.css",
+    "static/js/main.26a74f72.js"
+  ]
+}
