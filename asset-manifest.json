@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopyame/static/css/main.0b233bdc.css",
-    "main.js": "/shopyame/static/js/main.a7caaa98.js",
+    "main.css": "/shopyame/static/css/main.435d91f9.css",
+    "main.js": "/shopyame/static/js/main.d35428bc.js",
     "static/media/IMG_ExSL3.jpg": "/shopyame/static/media/IMG_ExSL3.30e38888378958a39f44.jpg",
     "static/media/IMG_ExSL1.jpg": "/shopyame/static/media/IMG_ExSL1.21f8d32b597081fa841e.jpg",
     "static/media/IMG_ExSL2.jpg": "/shopyame/static/media/IMG_ExSL2.62a5de760702d6819dc8.jpg",
@@ -9,11 +9,11 @@
     "static/media/IMG_BannerShoes.jpg": "/shopyame/static/media/IMG_BannerShoes.f0494598c2c49029ae4c.jpg",
     "static/media/IMG_Empty.png": "/shopyame/static/media/IMG_Empty.0503805348c546ee4450.png",
     "index.html": "/shopyame/index.html",
-    "main.0b233bdc.css.map": "/shopyame/static/css/main.0b233bdc.css.map",
-    "main.a7caaa98.js.map": "/shopyame/static/js/main.a7caaa98.js.map"
+    "main.435d91f9.css.map": "/shopyame/static/css/main.435d91f9.css.map",
+    "main.d35428bc.js.map": "/shopyame/static/js/main.d35428bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b233bdc.css",
-    "static/js/main.a7caaa98.js"
+    "static/css/main.435d91f9.css",
+    "static/js/main.d35428bc.js"
   ]
 }
