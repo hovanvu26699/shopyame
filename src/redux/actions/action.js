@@ -18,3 +18,33 @@ export const DLT = (id) => {
     payload: id,
   };
 };
+
+//////
+
+export const LOGIN = (item) => {
+  return {
+    type: "LOG_IN",
+    payload: item,
+  };
+};
+
+export const LOGOUT = () => {
+  return {
+    type: "LOG_OUT",
+    payload: "",
+  };
+};
+
+export const SIGNUP = (item) => {
+  return {
+    type: "SIGN_UP",
+    payload: item,
+  };
+};
+
+export const UPDATEUSER = (item) => {
+  return {
+    type: "UPDATE_USER",
+    payload: item,
+  };
+};

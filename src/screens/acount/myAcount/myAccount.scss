@@ -8,14 +8,21 @@
 
     .accountMenu {
         border-right: 1px solid #80808073;
-        border-bottom: 1px solid #80808073;
+
 
         .accountAvatar {
             margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+
+            &>span {
+                display: block;
+            }
         }
 
         .menuList {
             padding-left: 10px;
+            margin-bottom: 0;
 
             li {
                 font-size: 15px;
@@ -27,6 +34,11 @@
 
                 &:last-child {
                     border: 0;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ebebeb;
                 }
             }
         }

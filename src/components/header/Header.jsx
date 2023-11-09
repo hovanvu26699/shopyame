@@ -15,6 +15,8 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const getCart = useSelector((state) => state.cartreducer.carts);
+  const getUserCur = useSelector((state) => state.accountreducer.login);
+
   const [stickyClass, setStickyClass] = useState("");
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
@@ -304,14 +306,18 @@ const Header = () => {
           />
         </FormControl>
         <div className="user">
-          <Link to="/login">
+          <Link to={getUserCur.length === 1 ? "/account" : "/login"}>
             <PersonIcon style={{ color: "white" }} />
           </Link>
         </div>
         <div className="cart">
           <Link to="/carts">
             <LocalMallIcon style={{ color: "white" }} />
-            <span id="countItem">{getCart.length}</span>
+            <span id="countItem">
+              {getUserCur[0]?.carts
+                ? getUserCur[0].carts.length
+                : getCart.length}
+            </span>
           </Link>
         </div>
       </div>

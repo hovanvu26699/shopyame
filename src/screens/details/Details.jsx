@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action.js";
 
 import IMG_Mota from "../../assets/IMG_Mota.jpg";
@@ -25,6 +25,8 @@ const Details = () => {
     setSize(event.target.value);
   };
 
+  const getUserLg = useSelector((state) => state.accountreducer.login);
+  const getCarts = useSelector((state) => state.cartreducer.carts);
   const dispatch = useDispatch();
 
   const notifySuccess = (message) =>
@@ -49,14 +51,26 @@ const Details = () => {
       theme: "light",
     });
 
+  const addToUser = () => {
+    if (getUserLg.length > 0) {
+      console.log(getCarts);
+      getUserLg[0].carts = [...getCarts];
+    }
+  };
+
   const add = (e, size) => {
     if (size === "") {
       notifyWarn("Choose your size");
     } else {
       dispatch(ADD(e, size));
+      addToUser();
       notifySuccess("Cập nhật giỏ hàng thành công");
     }
   };
+
+  useEffect(() => {
+    addToUser();
+  }, [getCarts]);
 
   return (
     <div className="detailsContainer">
@@ -121,12 +135,12 @@ const Details = () => {
           </div>
         </div>
       </div>
-      <div className="sampleList">
+      {/* <div className="sampleList">
         <img src={IMG_Mota} alt="mau" />
         <img src={IMG_Mota} alt="mau" />
         <img src={IMG_Mota} alt="mau" />
         <img src={IMG_Mota} alt="mau" />
-      </div>
+      </div> */}
     </div>
   );
 };

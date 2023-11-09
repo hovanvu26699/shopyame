@@ -1,5 +1,7 @@
 const INIT_STATE = {
   carts: [],
+  users: [],
+  login: [],
 };
 
 export const cartreducer = (state = INIT_STATE, action) => {
@@ -52,6 +54,53 @@ export const cartreducer = (state = INIT_STATE, action) => {
         carts: data,
       };
 
+    default:
+      return state;
+  }
+};
+
+export const accountreducer = (state = INIT_STATE, action) => {
+  switch (action.type) {
+    case "SIGN_UP":
+      return {
+        ...state,
+        users: [
+          ...state.users,
+          {
+            ...action.payload,
+            firstName: "",
+            lastName: "",
+            nickName: "",
+            address: "",
+            phone: "",
+            carts: [],
+          },
+        ],
+      };
+    case "LOG_IN":
+      return {
+        ...state,
+        carts: [],
+        login: [action.payload],
+      };
+    case "LOG_OUT":
+      return {
+        ...state,
+        login: [],
+      };
+    case "UPDATE_USER":
+      const index = state.users.findIndex(
+        (user) => user.email === action.payload.email
+      );
+      const userUpdate = {
+        ...action.payload,
+      };
+      state.users[index] = userUpdate;
+      return {
+        ...state,
+        users: [...state.users],
+        login: [userUpdate],
+      };
     default:
       return state;
   }

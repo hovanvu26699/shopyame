@@ -14,14 +14,22 @@ import Empty from "../../assets/IMG_Empty.png";
 
 const Carts = () => {
   const getCart = useSelector((state) => state.cartreducer.carts);
+  const getUser = useSelector((state) => state.accountreducer.login);
+
   const dispatch = useDispatch();
 
   const [total, setTotal] = useState(0);
   const [data, setData] = useState([]);
 
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [address, setAD] = useState("");
+  const [name, setName] = useState(
+    getUser[0]?.firstName
+      ? getUser[0]?.lastName + " " + getUser[0].firstName
+      : ""
+  );
+  const [phone, setPhone] = useState(getUser[0]?.phone ? getUser[0].phone : "");
+  const [address, setAD] = useState(
+    getUser[0]?.address ? getUser[0].address : ""
+  );
 
   const add = (e) => {
     dispatch(ADD(e));
@@ -81,7 +89,7 @@ const Carts = () => {
     }
   };
   useEffect(() => {
-    setData(getCart);
+    setData(getUser[0]?.carts ? getUser[0].carts : getCart);
     const sum = () => {
       let price = 0;
       getCart.map((ele) => {
@@ -118,7 +126,7 @@ const Carts = () => {
                 <th>SỐ LƯỢNG</th>
                 <th>TỔNG</th>
               </tr>
-              {getCart?.map((item) => {
+              {data.map((item) => {
                 return (
                   <tr>
                     <td className="btnDel">
@@ -166,10 +174,14 @@ const Carts = () => {
                 <Form.Control
                   type="text"
                   placeholder="Tên người nhận"
+                  value={
+                    getUser[0]?.lastName
+                      ? getUser[0].lastName + " " + getUser[0].firstName
+                      : ""
+                  }
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
-                  value={name}
                 />
               </Form.Group>
 
@@ -181,7 +193,7 @@ const Carts = () => {
                   onChange={(e) => {
                     setPhone(e.target.value);
                   }}
-                  value={phone}
+                  value={getUser[0]?.phone ? getUser[0].phone : ""}
                 />
               </Form.Group>
 
@@ -193,7 +205,7 @@ const Carts = () => {
                   onChange={(e) => {
                     setAD(e.target.value);
                   }}
-                  value={address}
+                  value={getUser[0]?.address ? getUser[0].address : ""}
                 />
               </Form.Group>
 
